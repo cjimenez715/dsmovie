@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+
+
+
 :root {
-  --color-primary: #4D41C0;
+  --color-primary: #111213ff;
 }
 
 * {
@@ -10,10 +13,21 @@
 }
 
 html, body {
-    background-color: #E8E8E8;
+    background-color: #212224ff;
 }
 
 a, a:hover {
   text-decoration: none;
   color: unset;
+}
+
+.btn-primary{
+  background-color: rgb(209, 41, 33) !important;
+  border-color: grey;
+}
+
+.btn-primary:hover{
+  background-color: rgb(194, 42, 34) !important;
+  color: black;
+  border-color: grey;
 }

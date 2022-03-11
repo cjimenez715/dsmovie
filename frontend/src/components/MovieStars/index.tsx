@@ -31,7 +31,7 @@ type StarProps = {
 function Star({ fill }: StarProps) {
   if (fill === 0) {
     return <StarEmpty />;
-  } else if (fill == 1) {
+  } else if (fill === 1) {
     return <StarFull />;
   } else {
     return <StarHalf />;

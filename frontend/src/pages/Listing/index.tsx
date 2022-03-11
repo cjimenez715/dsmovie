@@ -36,8 +36,8 @@ function Listing() {
         <div className="row">
           {page.content.map(movie => {
             return (
-              <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
-                <MovieCard key={movie.id} movie={movie} />
+              <div key={movie.id} className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                <MovieCard movie={movie} />
               </div>
             );
           })}

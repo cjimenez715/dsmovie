@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.devsuperior.dsmovie.dto.MovieDto;
 import com.devsuperior.dsmovie.dto.ScoreDto;
-import com.devsuperior.dsmovie.services.MovieService;
 import com.devsuperior.dsmovie.services.ScoreService;
 
 @RestController
@@ -17,9 +16,6 @@ public class ScoreController {
 	
 	@Autowired
 	private ScoreService scoreService;
-	
-	@Autowired
-	private MovieService service;
 
 	@PutMapping
 	public MovieDto saveScore(@RequestBody ScoreDto score) {
